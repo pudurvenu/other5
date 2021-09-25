@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Our Company</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="footcss.css">
+ <script src="gauge.min.js"></script>
+ <script src="canva.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+canvas{
+padding-left: 0;
+position: relative;
+margin-top: 20px;
+padding-right: 0;
+margin-left: 200px;
+margin-right: auto;
+display: block;
+width: 800px;
+}
+
+
+@media(max-width: 480px){
+canvas{
+padding-left: 120px;
+
+position: absolute;
+margin-top: -130px;
+padding-right: 0;
+margin-left: -260px;
+margin-right: auto;
+display: block;
+width: 20px;
+object-fit: contain;
+height: 20px;
+}
+
+#resp-canvas{
+
+height: 20px;
+}
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(1,1,1,1.2);
+  transition: 0.3s;
+  width: 30%;
+position: relative;
+background: #1b1b1b;
+display: flex;
+justify-content: center;
+align-items: center;
+top: 200px;
+left: 40px;
+height: 500px;;
+  border-radius: 5px;
+}
+.card .cardcon{
+position: absolute;
+top: 30px;
+left: 65px;
+}
+
+.card .cardcon p{
+color: #fff;
+font-family: 'montserrat';
+font-size: 21px;
+}
+
+.card .cardcon p1{
+color: #fff;
+
+font-family: 'montserrat';
+font-size: 15px;
+}
+
+.card .msg{
+width: 330px;
+height: 35px;
+margin-top: 15px;
+border-radius: 3px;
+border: 3px solid white;
+background: none;
+color: #fff;
+
+}
+
+
+.card .msg::placeholder{
+color: #fff;
+font-family: 'montserrat';
+font-size: 15px;
+padding-left: 20px;
+}
+
+
+.card .cardcon #txt-btn{
+font-family: 'montserrat';
+background: none;
+border-radius: 5px;
+color: white;
+font-size: 15px;
+font-weight: 200px;
+width: 100px;
+height: 40px;
+border: 2px solid white;
+transition: all 0.3s ease;
+}
+
+.card .cardcon #txt-btn:hover{
+background: #fff;
+color: #000;
+}
+
+.card .cardcon #venu{
+padding-top: 10px;
+color: #fff;
+font-size: 15px;
+}
+
+.cardd {
+  box-shadow: 0 4px 8px 0 rgba(1,1,1,1.2);
+  transition: 0.3s;
+  width: 30%;
+position: absolute;
+background: #1b1b1b;
+display: flex;
+justify-content: center;
+align-items: center;
+top: 225px;
+left: 533px;
+height: 500px;;
+  border-radius: 5px;
+
+
+}
+
+.cardd .cardconn{
+position: absolute;
+top: 30px;
+left: 65px;
+}
+
+
+
+.cardd .cardconn p{
+color: #fff;
+font-family: 'montserrat';
+font-size: 21px;
+}
+.carddd .cardconnn p{
+color: #fff;
+font-family: 'montserrat';
+font-size: 21px;
+}
+
+.cardd .cardconn #range2{
+color: #fff;
+font-family: 'montserrat';
+font-size: 15px;
+}
+
+
+.cardd .cardconn .buttonn{
+font-family: 'montserrat';
+background: none;
+border-radius: 5px;
+color: white;
+font-size: 15px;
+font-weight: 200px;
+
+width: 140px;
+height: 40px;
+border: 2px solid white;
+transition: all 0.3s ease;
+}
+.cardd .cardconn .buttonn:hover{
+background: #fff;
+color: #000;
+}
+
+.carddd {
+  box-shadow: 0 4px 8px 0 rgba(1,1,1,1.2);
+  transition: 0.3s;
+  width: 30%;
+position: absolute;
+background: #1b1b1b;
+display: flex;
+justify-content: center;
+align-items: center;
+top: 225px;
+left: 1020px;
+height: 500px;;
+  border-radius: 5px;
+
+
+}
+
+.carddd .cardconnn{
+position: absolute;
+top: 30px;
+
+left: 65px;
+}
+.carddd .cardconnn p1{
+color: #fff;
+
+font-family: 'montserrat';
+font-size: 16px;
+}
+.carddd .cardconnn p2{
+color: #fff;
+margin-top: 30px;
+font-family: 'montserrat';
+font-size: 16px;
+}
+
+
+.cardddd {
+  box-shadow: 0 4px 8px 0 rgba(1,1,1,1.2);
+  transition: 0.3s;
+  width: 62%;
+position: absolute;
+background: #1b1b1b;
+display: flex;
+color: #fff;
+font-size: 20px;
+justify-content: center;
+align-items: center;
+top: 765px;
+left: 533px;
+height: 500px;;
+  border-radius: 5px;
+}
+
+.cardddd .cardconnnn{
+position: absolute;
+left: 65px;
+top: 30px;
+}
+
+.cardddd .cardconnnn #sds{
+display: flex;
+word-spacing: 10px;
+
+font-size: 17px;
+}
+.cardddd .cardconnnn #sds1{
+display: flex;
+margin-top: 17px;
+font-size: 17px;
+word-spacing: 20px;
+}
+.cardddd .cardconnnn span{
+margin-left: 1em;
+
+}
+
+
+
+
+
+.carddddd {
+  box-shadow: 0 4px 8px 0 rgba(1,1,1,1.2);
+  transition: 0.3s;
+  width: 30%;
+position: absolute;
+background: #1b1b1b;
+display: flex;
+justify-content: center;
+align-items: center;
+top: 764px;
+color: #fff;
+left: 47px;
+height: 500px;;
+  border-radius: 5px;
+
+}
+.carddddd .cardconnnnn p1{
+font-size: 21px;
+}
+
+.carddddd .cardconnnnn{
+position: absolute;
+left: 65px;
+top: 30px;
+}
+.carddddd .cardconnnnn span{
+margin-left: 5em;
+margin-top: 10px;
+display: inline-block;
+font-size: 15px;
+
+}
+
+
+<!------------------------------------------->
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+
+
+
+</style>
+</head>
+
+<body onload="animateGauges()">
+<div class="hero">
+
+<nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">Appliance Panel</a>
+
+      </div>
+
+<input type="checkbox" id="click">
+<label for="click" class="menu-btn">
+<i class="fa fa-bars"></i>
+</label>
+      <ul>
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="Contact-Form/index.html">Contact</a></li>
+        <li><a href="#">Portfolio</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <h1>Home Automation Appliances Panel</h1>
+  <h2>Navigate to the each panel to control</h2>
+
+
+
+<div class="card">
+<div class="cardcon">
+<p>Send the message to Appliance</p><br><br><br>
+<p1>You can send the message to be displayed <br>on the device or instruction to operationalise <br> the appliance.<p1><br>
+ <input type="text" id="msg_txt" class="msg" placeholder="Type Message" name="txt_msg">
+<br><br>
+<button onclick="fn1()" id="txt-btn">SEND</button>
+
+<div id="venu"><span></span></div>
+
+<div class="switch">
+	<input type="checkbox" id="ckbox">
+	<label><i></i></label>
+</div> 
+
+
+  </div>
+</div>
+
+
+
+<div class="cardd">
+<div class="cardconn">
+
+
+
+		<div id="mainThermostat">
+				
+					<div id="tstatSlider">
+				
+						<p>Thermostat Setting</p><br><br><br>
+						<input id="tstatRange" type="range" style="width: 200px; height 40px" min="72.0" max="86.0" value="76" step = "0.5" list="increments" oninput="showMainTstatValue(this.value)" onchange="showMainTstatValue(this.value)">
+						<datalist id="increments">
+							<option>72</option>
+							<option>74</option>
+							<option>76</option>
+							<option>78</option>
+							<option>80</option>
+							<option>82</option>
+							<option>84</option>
+							<option>86</option>
+						</datalist>
+						<span id="range2">76.0 &deg;F</span>
+						<br/> <br/>
+
+
+					<div id="tstatButtons">
+					
+			
+						<input type="button" class="buttonn" value="INCREASE" onclick="tstatUP()">
+						<br> <br>
+						<input type="button" class="buttonn" value="DECREASE" onclick="tstatDN()">
+<br /><br />
+					</div>
+                                         </div>
+						<input type="button" class="buttonn" onclick="sendMainTstatValue()" value = "SET" />
+						
+					
+					
+
+				
+				</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+<div class="carddd">
+<div class="cardconnn">
+<p>Status of the Lightings in Home</p><br><br><br>
+<div id="lgt" name="status"></div>
+<div class="flx">
+<p1>Indicator</P1>
+<span id="btn" class="status"></span></div>
+<div class="flx1">
+<p2>Lamp</P2>
+<span id="btn1" class="status"></span></div>
+
+  </div>
+</div>
+
+
+
+
+
+<div class="carddddd">
+<div class="cardconnnnn">
+
+
+<p1>Status of the Switches in Home</p1><br><br>
+<div id="lgtt" name="statuss"></div>
+<div class="flxx">
+<p>Switch - 1</P>
+<span id="btnn" class="statuss"></span></div>
+<div class="flxx1">
+<p>Switch - 2</P>
+<span id="btnn1" class="statuss"></span></div>
+<div class="flxx2">
+<p>Switch - 3</P>
+<span id="btnn2" class="statuss1"></span></div>
+<div class="flxx3">
+<p>Switch - 4</P>
+<span id="btnn3" class="statuss2"></span></div>
+<div class="flxx4">
+<p>Switch - 5</P>
+<span id="btnn4" class="statuss3"></span></div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+<div class="cardddd">
+<div class="cardconnnn">
+<p>Real Time Temperature of the Room</p><br><br><br>
+<div id="sds">
+<div>Temperature = </div><span><div id="temp" name="Data"></div>&degF.
+</div>
+<div id="sds1">
+<div>Entries     = </div><span><div id="count" name="Data"></div>
+</div>
+
+  </div>
+
+
+<div class="temp_dial">
+
+<div id="temp" name="Data"></div>
+
+<canvas id="resp-canvas"
+        data-type="radial-gauge"
+        data-width="400"
+        data-height="400"
+        data-units="°C"
+        data-title="Temperature"
+        data-min-value="-50"
+        data-max-value="50"
+        data-major-ticks="[-50,-40,-30,-20,-10,0,10,20,30,40,50]"
+        data-minor-ticks="2"
+        data-stroke-ticks="true"
+        data-highlights='[
+                    {"from": -50, "to": 0, "color": "rgba(0,0, 255, .3)"},
+                    {"from": 0, "to": 50, "color": "rgba(255, 0, 0, .3)"}
+                ]'
+        data-ticks-angle="225"
+        data-start-angle="67.5"
+        data-color-major-ticks="#ddd"
+        data-color-minor-ticks="#ddd"
+        data-color-title="#eee"
+        data-color-units="#ccc"
+        data-color-numbers="#eee"
+        data-color-plate="#222"
+        data-border-shadow-width="0"
+        data-borders="true"
+        data-needle-type="arrow"
+        data-needle-width="2"
+        data-needle-circle-size="7"
+        data-needle-circle-outer="true"
+        data-needle-circle-inner="false"
+        data-animation-duration="1500"
+        data-animation-rule="linear"
+        data-color-border-outer="#333"
+        data-color-border-outer-end="#111"
+        data-color-border-middle="#222"
+        data-color-border-middle-end="#111"
+        data-color-border-inner="#111"
+        data-color-border-inner-end="#333"
+        data-color-needle-shadow-down="#333"
+        data-color-needle-circle-outer="#333"
+        data-color-needle-circle-outer-end="#111"
+        data-color-needle-circle-inner="#111"
+        data-color-needle-circle-inner-end="#222"
+        data-value-box-border-radius="0"
+        data-color-value-box-rect="#222"
+        data-color-value-box-rect-end="#333"
+        data-font-value="Led"
+        data-font-numbers="Led"
+        data-font-title="Led"
+        data-font-units="Led"
+></canvas>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+</div>
+<footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>Portfolio</h4>
+  	 			<ul>
+  	 				<li><a href="#">about me</a></li>
+  	 				<li><a href="#">my services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">freelancing</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">Order</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>online shop</h4>
+  	 			<ul>
+  	 				<li><a href="#">arduino</a></li>
+  	 				<li><a href="#">raspberry</a></li>
+  	 				<li><a href="#">adafruit</a></li>
+  	 				<li><a href="#">sparkfun</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow me</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+<div class="footerr">Powered and Owned</div>
+<div class="footerr">© All rights reserved by Venugopal Pudur</div>
+  </footer>
+
+</body>
+
+
+
+
+
+<script>
+let txt_msg_send;
+
+function fn1(){
+let h = document.getElementById("msg_txt").value;
+//alert("Your Message: " +h);
+//document.getElementById("venu").innerHTML=h;
+
+
+txt_msg_send = 'https://api.thingspeak.com/update?api_key=LJ4CRNFOAZSQNCW8&field1=' +h;
+
+
+document.getElementById("venu").innerHTML = "Your Message has been sent to the device. <br> Please look at your device for results. <br> Thank you.";
+
+
+   fetch(txt_msg_send)
+    /*.then(res => alert('Success'))
+     .catch(err => alert('Failed'));*/
+
+ if ( h >= 0){
+document.getElementById("ckbox").click();
+}
+
+
+}
+</script>
+
+
+<script>
+
+
+let sts;
+
+function getData(){
+fetch('https://api.thingspeak.com/channels/1391597/feeds.json?results=2').then((data)=>{
+console.log(data);
+return data.json();
+}).then((completedata)=>{
+console.log(completedata.feeds[1].field1);
+console.log(completedata.feeds[1].entry_id);
+document.getElementById('temp').innerHTML=completedata.feeds[1].field1;
+document.getElementById('count').innerHTML=completedata.feeds[1].entry_id;
+
+
+
+
+
+
+})
+setTimeout(()=>getData(),1000);
+}
+getData();
+
+
+
+
+
+
+
+function getData1(){
+fetch('https://api.thingspeak.com/channels/1455214/feeds.json?results=2').then((data)=>{
+console.log(data);
+return data.json();
+}).then((completedata)=>{
+console.log(completedata.feeds[1].field1);
+console.log(completedata.feeds[1].entry_id);
+document.getElementById('lgt').innerHTML=completedata.feeds[1].field1;
+//document.getElementById('count').innerHTML=completedata.feeds[1].entry_id;
+
+
+sts = completedata.feeds[1].field1;
+if (sts > 0){
+var btn=document.getElementById("btn");
+
+btn.classList.add("active");
+document.getElementById("btn").innerHTML="Active";
+
+var btn1=document.getElementById("btn1");
+
+btn1.classList.add("active");
+document.getElementById("btn1").innerHTML="Active";
+}
+else{
+var btn=document.getElementById("btn");
+
+btn.classList.remove("active");
+document.getElementById("btn").innerHTML="Inactive";
+
+var btn1=document.getElementById("btn1");
+
+btn1.classList.remove("active");
+document.getElementById("btn1").innerHTML="Inactive";
+
+}
+
+
+})
+setTimeout(()=>getData1(),1000);
+}
+getData1();
+
+
+
+
+</script>
+
+
+
+
+
+
+
+<script>
+
+function showMainTstatValue(newValue)
+{
+ 	document.getElementById("range2").innerHTML = newValue;
+}
+
+function tstatUP()
+{
+	var newValue = document.getElementById("range2").innerHTML;
+	newValue++;
+	if(newValue > 86) newValue = 86;
+	document.getElementById("range2").innerHTML = newValue;
+        document.getElementById("tstatRange").value = newValue;
+}
+
+function tstatDN()
+{
+    var newValue = document.getElementById("range2").innerHTML;
+	newValue--;
+	if(newValue < 72) newValue = 72;
+	document.getElementById("range2").innerHTML = newValue;
+        document.getElementById("tstatRange").value = newValue;
+}
+
+function sendMainTstatValue()
+{
+	var newValue = document.getElementById("range2").innerHTML;
+	
+let txt_msg_send2;
+
+
+//let h = document.getElementById("msg_txt").value;
+//alert("Your Message: " +h);
+alert("Your Message: " +newValue);
+//document.getElementById("venu").innerHTML=h;
+
+
+txt_msg_send2 = 'https://api.thingspeak.com/update?api_key=LJ4CRNFOAZSQNCW8&field1=' +newValue;
+
+//document.getElementById("venu").innerHTML = txt_msg_send;
+
+
+   fetch(txt_msg_send2)
+    /*.then(res => alert('Success'))
+     .catch(err => alert('Failed'));*/
+ 
+
+}
+
+
+</script>
+
+<script>
+
+
+let stss;
+
+function getData2(){
+fetch('https://api.thingspeak.com/channels/1455214/feeds.json?results=2').then((data)=>{
+console.log(data);
+return data.json();
+}).then((completedata)=>{
+console.log(completedata.feeds[1].field1);
+console.log(completedata.feeds[1].entry_id);
+document.getElementById('lgtt').innerHTML=completedata.feeds[1].field1;
+//document.getElementById('count').innerHTML=completedata.feeds[1].entry_id;
+
+
+stss = completedata.feeds[1].field1;
+if (stss > 0){
+var btnn=document.getElementById("btnn");
+var btnn1=document.getElementById("btnn1");
+var btnn2=document.getElementById("btnn2");
+var btnn3=document.getElementById("btnn3");
+var btnn4=document.getElementById("btnn4");
+
+btnn.classList.add("active");
+document.getElementById("btnn").innerHTML="ON";
+
+
+btnn1.classList.add("active");
+document.getElementById("btnn1").innerHTML="ON";
+
+btnn2.classList.add("active");
+document.getElementById("btnn2").innerHTML="ON";
+
+btnn3.classList.add("active");
+document.getElementById("btnn3").innerHTML="ON";
+
+btnn4.classList.add("active");
+document.getElementById("btnn4").innerHTML="ON";
+}
+else{
+var btnn=document.getElementById("btnn");
+var btnn1=document.getElementById("btnn1");
+var btnn2=document.getElementById("btnn2");
+var btnn3=document.getElementById("btnn3");
+var btnn4=document.getElementById("btnn4");
+
+btnn.classList.remove("active");
+document.getElementById("btnn").innerHTML="OFF";
+
+
+btnn1.classList.remove("active");
+document.getElementById("btnn1").innerHTML="OFF";
+
+btnn2.classList.remove("active");
+document.getElementById("btnn2").innerHTML="OFF";
+
+btnn3.classList.remove("active");
+document.getElementById("btnn3").innerHTML="OFF";
+
+btnn4.classList.remove("active");
+document.getElementById("btnn4").innerHTML="OFF";
+
+}
+
+
+})
+setTimeout(()=>getData2(),1000);
+}
+getData2();
+
+
+
+
+</script>
+
+</html>
